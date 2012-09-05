@@ -1,2 +1,3 @@
 import Data.List
-ret = sum (union [3,6..999] [5,10..999])
+ret a b max = sum (union [a,a*2..max-1] [b,b*2..max-1])
+main = print $ ret 3 5 1000
